@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>john coins - skdl.net</title>
+
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">skdl.net</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="store.html">store</a></li>
+                    <li><a href="bibliography.html">bibliography</a></li>
+                    <li class="nav-separator"></li>
+                    <li><a href="johncoins.html" class="active"><span class="jc-symbol">J₵</span></a></li>
+                </ul>
+            </div>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container jc-container">
+            <div class="jc-hero" data-animate>
+                <div class="jc-img-wrapper">
+                    <img src="john3.png" alt="The John Coin">
+                </div>
+                <div class="jc-card">
+                    <p class="jc-label">Current Market Value</p>
+                    <h1 class="jc-value">0.005 <span class="jc-symbol">J₵</span></h1>
+                    <p class="jc-description">The John Coin (<span class="jc-symbol">J₵</span>) is the only currency
+                        backed by the complete
+                        psychological instability of its creator. It is untraceable, unhackable, and largely unusable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Forex Chart Section -->
+            <div class="jc-forex-section" data-animate>
+                <div class="jc-forex-header">
+                    <h2 class="jc-forex-title"><span class="jc-symbol">J₵</span> / USD Market Overview</h2>
+                    <div class="jc-forex-badge">Unprecedented Crash</div>
+                    <div class="chart-controls">
+                        <button class="chart-btn" data-range="1D">1D</button>
+                        <button class="chart-btn" data-range="1M">1M</button>
+                        <button class="chart-btn" data-range="1Y">1Y</button>
+                        <button class="chart-btn" data-range="5Y">5Y</button>
+                        <button class="chart-btn active" data-range="ALL">ALL</button>
+                    </div>
+                </div>
+                <div class="chart-container" id="johnCoinChart">
+                    <div class="chart-crosshair"></div>
+                    <div class="chart-tooltip">
+                        <span class="date"></span>
+                        <div class="tooltip-row">
+                            <span class="label">Price:</span>
+                            <span class="price"></span>
+                        </div>
+                        <div class="tooltip-row">
+                            <span class="label">Mkt Cap:</span>
+                            <span class="mkt-cap"></span>
+                        </div>
+                    </div>
+                    <svg class="chart-svg" id="chartSvg">
+                        <defs>
+                            <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#ff4444" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#ff4444" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Dynamic content will be injected here -->
+                        <g class="chart-axis" id="xAxis"></g>
+                        <g class="chart-axis" id="yAxis"></g>
+                        <path class="chart-gradient" id="chartArea" d="" />
+                        <path class="chart-line" id="chartPath" d="" />
+                    </svg>
+                </div>
+                <div style="margin-top: 1.5rem; opacity: 0.6; font-size: 0.9rem; text-align: center;">
+                    <em>"A minor correction in the context of eternal suffering." - The John Bank</em>
+                </div>
+            </div>
+
+            <div class="jc-grid" data-animate>
+                <div class="jc-feature">
+                    <h3>Proof of Scream</h3>
+                    <p>Unlike traditional mining, <span class="jc-symbol">J₵</span>s are generated through
+                        high-frequency acoustic distress.
+                        Each coin represents 1,000 biological screams.</p>
+                </div>
+                <div class="jc-feature">
+                    <h3>Absolute Scarcity</h3>
+                    <p>There will only ever be 69 <span class="jc-symbol">J₵</span>s in existence. This creates the
+                        illusion of value while
+                        maintaining complete economic irrelevance.</p>
+                </div>
+                <div class="jc-feature">
+                    <h3>Physical Form</h3>
+                    <p>While digital, each <span class="jc-symbol">J₵</span> can be manifested physically by staring at
+                        a blank screen for three
+                        days without blinking.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="store.html">merch</a>
+                <a href="https://www.youtube.com/@skdl_" target="_blank">youtube</a>
+            </div>
+            <small>&copy; 2025 skdl. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
