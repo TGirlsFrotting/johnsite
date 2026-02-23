@@ -507,20 +507,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.classList.add('crash-mode');
     }
 
-    function stopChaos() {
-        isCrashing = false;
-
-        // 1. Stop Sounds
-        activeSirens.forEach(s => {
-            s.pause();
-            s.currentTime = 0;
-        });
-        activeSirens = [];
-
-        // 2. Clear Visuals
-        document.documentElement.classList.remove('crash-mode');
-    }
-
 
     if (crashBadge) {
         crashBadge.addEventListener('mouseenter', startChaos);
@@ -528,3 +514,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
