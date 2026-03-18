@@ -485,7 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
        VIOLENT CHAOTIC ALARM v3 (Lore-Accurate)
        =========================== */
     const crashBadge = document.querySelector('.jc-forex-badge');
-    const sirenFiles = ['siren.mp3', 'siren_chaos.mp3', 'siren3.mp3'];
+    const sirenFiles = ['siren.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren_chaos.mp3', 'siren3.mp3'];
     let activeSirens = [];
 
     function startChaos() {
